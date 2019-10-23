@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Success! Welcome
+<div th:text="${name}"></div>
+<div th:utext="${name}"></div>
+<!-- th:each每次遍历都会生成当前的标签-->
+<div th:text="${user}" th:each="user:${users}" />
+<h4>
+    <span  th:each="user:${users}"> [[${user}]] </span>
+</h4>
+
+</body>
+</html>
