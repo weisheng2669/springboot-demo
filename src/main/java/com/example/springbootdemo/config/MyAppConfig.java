@@ -39,7 +39,7 @@ public class MyAppConfig {
             @Override
             public void addInterceptors(InterceptorRegistry registry) {
                 registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/**")
-                .excludePathPatterns("/","/index.html","/user/login","/asserts/**","/webjars/**");
+                .excludePathPatterns("/","/index.html","/user/login","/asserts/**","/webjars/**","/css/**");
             }
         };
         return adapter;
